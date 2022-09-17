@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(23, 25, 30);
+}
+/* HTML PICTURES CSS*/
+#namecont {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size:9.5px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(249, 216, 66);
+}
+
+#shipcont {
+    display: flex;
+    flex-direction: row;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 6px rgb(255, 255, 255);
+}
+
+#stardestroyer {
+    font-size:10px;
+}
+
+#falcon {
+    font-size:3px;
+}
+
+#intromsg {
+    font-family: Changa;
+    line-height:150%;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color:rgb(218, 223, 233);
+    letter-spacing:2px;
+}
+
+/* DOM MANIPULATION CSS */
+#lines { 
+    font-family: Changa;
+    letter-spacing:2px;
+    line-height:150%;
+}
+
+#whoisalexmsg, #whoamimsg, #emailmsg {
+    font-size: 14px;
+    width: 850px;
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#instructions, #resumeLoad{ 
+    font-size: 14px;
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color:rgb(244, 10, 201);
+}
+
+/* cmd lines */
+#cmdpreset, #cmdHistory {
+    font-size: 16px;
+    font-family: Changa;
+    letter-spacing: 2px;
+    margin-left: 30px;
+    color: rgba(16, 247, 20, 0.579);
+    text-shadow: 0 0 5px rgba(16, 247, 20, 0.579);
+}
+
+input {
+    font-size: 16px;
+    font-family: Changa;
+    margin-left: 3px;
+    width: 6em;
+    border: none;
+    outline: none;
+    color: rgba(16, 247, 20, 0.579);
+    text-shadow: 0 0 5px rgba(16, 247, 20, 0.579);
+}
+
+#errmsg {
+    color: rgb(224, 8, 8);
+    margin-left: 30px;
+}
+
+.blue-glow {
+    color: rgb(0, 195, 255);
+    text-shadow: 0 0 5px rgb(0, 119, 255);
+    text-decoration: none;
+}
+
+.secondary-color {
+    color:rgb(255, 209, 3);
+}
+/* SOCIAL LIST */
+#socialContainer {
+    display: flex; 
+    font-size: 14px;
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#socialNameList {
+    width: 200px;
+}
+
+#socialLinkList {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+/* HELP LIST */
+#helpContainer {
+    display: flex; 
+    font-size: 14px;
+    margin: 10px;
+    margin-left: 50px;
+}
+
+#helpContainer > ul {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+#helpNameUL {
+    width: 200px;
+}
+
+/* PROJECTS LIST */
+#projectContainer {
+    display: flex; 
+    font-size: 14px; 
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#projectContainer > ul {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+#projectNameUL {
+    width: 200px;
+}
+
+/* skills LIST*/
+#skillsContainer {
+    display: flex;
+    font-size: 14px; 
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#skillsNameList {
+    width: 200px;
+}
+
+#projectNameUL > li:hover, #socialNameList > a:hover {
+    color: rgb(224, 8, 8);
+    text-shadow: 0 0 5px rgb(222, 53, 78);
+    cursor: pointer;
+}
+
+
+
+
