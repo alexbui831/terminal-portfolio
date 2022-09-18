@@ -54,7 +54,7 @@
     margin-bottom: 5px;
 }
 
-#instructions, #resumeLoad{ 
+#instructions { 
     font-size: 14px;
     margin-left: 50px;
     margin-top: 5px;
@@ -168,7 +168,7 @@ input {
     width: 200px;
 }
 
-#projectNameUL > li:hover, #socialNameList > a:hover {
+#projectNameUL > li:hover, #projectDescUL > li:hover, #socialNameList > a:hover {
     color: rgb(224, 8, 8);
     text-shadow: 0 0 5px rgb(222, 53, 78);
     cursor: pointer;
