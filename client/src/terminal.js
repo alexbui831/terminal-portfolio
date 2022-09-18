@@ -66,6 +66,12 @@ const projectList = [
         desc:'A personal mock up of the Google home page [CSS]',   
         demo:'./images/scuffed-google-homepage.png'
     },
+    {
+        name:'portfolio',
+        gitlink:'https://github.com/alexbui831/terminal-portfolio',
+        desc:'The online website you are currently viewing. [JS Node.js Express AWS]',
+        demo:'./images/portfolio.png'
+    },
 ]
 
 // create dictionary for my tech skills
@@ -77,9 +83,12 @@ const skillsList = [
     {name:'git',        level:'2+ years'},
     {name:'SQL',        level:'2+ years'},
     {name:'PHP',        level:'experienced'},
-    {name:'React',      level:'experienced'},
+    {name:'React JS',   level:'experienced'},
     {name:'Tailwind',   level:'basic'},
     {name:'C++',        level:'basic'},
+    {name:'Node JS',    level:'beginner'},
+    {name:'Express',    level:'beginner'},
+    {name:'AWS',        level:'beginner'},
 ]
 
 // switch statement for functions
@@ -149,7 +158,7 @@ const whoisalex = async () => {
     newLine.setAttribute('id', 'whoisalexmsg');
     newLine.classList.add('secondary-color');
 
-    newLine.innerText = "This message is brought to you by Alexander:\n\n Hello visitor!\nI'm a software developer who likes creating engaging websites with aesthetically pleasing user interfaces such as this space wars themed terminal portfolio.\n After graduating with a Bachelor's in software engineering (3.39 GPA), I was hoping to develop my skills professionally and decided to accept an IT internship at a company called Hunington Ingalls; however, I was placed on the software business relationship team where I learned about business relationship management, project priority organization, and interpersonal communication skills.\n After the internship ended, I believed that my programming talent was wasted.\n I simply would have rather been working on professional code like I envisioned. So currently, to prepare myself for upcoming interviews, I decided to create a few projects that would show recruiters what I am capable of building, while at the same time proving how I am the type to put in overtime in order to reach my goals of becoming a professional software developer.\n\n With that being said, I hope you get an idea of my personality and work ethic. Hope you enjoy your time with Chewbotcaa! \n\n - Alexander Bui \n";
+    newLine.innerText = "This message was brought to you by Alexander:\n\n Hello guestName!\nI'm a software developer who likes creating engaging websites with aesthetically pleasing user interfaces such as this Star Wars themed command line portfolio.\n\n After graduating with a Bachelor's in software engineering (3.39 GPA) at Mississippi State, I was hoping to develop my skills in a professional environment and decided to accept an IT internship at a company called Hunington Ingalls; however, I ended up on the IT business team where I mostly focused on the relationship between corporate businesses and software development teams. I also participated in the anaylsis of IT projects to organize a company priority list and honed my interpersonal communication skills by surveying individuals and presenting information gathered to my team.\n\n After my internship ended, I knew that the line of work I was doing was not what I liked.\n I would have rather been growing my career as a software developer and been working on professional code like I envisioned. So currently, to prepare myself for upcoming interviews, I decided to create a few projects that would show recruiters what I am capable of building, while at the same time, proving how I will put in the extra mile to achieve my goals.\n\n With that being said, I hope you got a good idea of my personality, technological skills, and work ethic from this website. Hope you enjoy your time with Chewbotcaa!\n\np.s. If you try the 'whatami' command, turn down your volume a bit.\n  - Alexander Bui \n";
     lines.appendChild(newLine);   
 }
 
