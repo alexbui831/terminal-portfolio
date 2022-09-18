@@ -7,8 +7,9 @@ app.get('/', (request, response) => {
     response.send('Welcome home');
 });
 
+const port = process.env.PORT || 3000; 
 // defines webserver port with callback function
 // when we visit on terminal
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Whats up');
 });
