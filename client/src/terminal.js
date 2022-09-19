@@ -33,7 +33,7 @@ const projectList = [
     {
         name:'dashboard', 
         gitlink:'https://github.com/alexbui831/reactjs-syncfusion-dashboard-app',       
-        desc:'Huntington Ingalls internship project where I was tasked to create a front-end for a dashboard metrics/employee web app [React Tailwind SyncFusion]',            
+        desc:'Internship project where I was tasked to create a dashboard metrics/employee web app [React Tailwind SyncFusion]',            
         demo:'./images/dashboard.png'
     }, 
     {
