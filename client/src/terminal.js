@@ -6,12 +6,12 @@ const intromsg = document.getElementById("intromsg")
 // create dictionary that will be used to mount commands when user types help
 const helpList = [
     {name:"whoisalex",      desc:"Who is Alexander Bui"},                               //done
-    {name:"whatami",        desc:"What is a chewbotca"},                                //done
-    {name:"projects",       desc:"View projects"},                                      //done       
-    {name:"skills",         desc:"View programming languages and other skills"},        //done                       
+    {name:"whatami",        desc:"What is Chewbotcaa"},                                //done
+    {name:"projects",       desc:"View programming projects"},                                      //done       
+    {name:"skills",         desc:"View knowledge of programming languages and other skills"},        //done                       
     {name:"socials",        desc:"List professional social media links"},               //done
     {name:"email",          desc:"Obtain Alexander's email"},                           //done
-    {name:"resume",         desc:"Obtain Alexander's resume"},
+    {name:"resume",         desc:"Open Alexander's resume"},
     {name:"help",           desc:"Display help commands"},                              //done
     {name:"clear",          desc:"Clear terminal text"},                                //done
 ];
@@ -33,7 +33,7 @@ const projectList = [
     {
         name:'dashboard', 
         gitlink:'https://github.com/alexbui831/reactjs-syncfusion-dashboard-app',       
-        desc:'Code along dashboard metrics/employee app where I familiarsed myself with react techniques [React.js Tailwind.css SyncFusion]',            
+        desc:'Huntington Ingalls internship project where I was tasked to create a front-end for a dashboard metrics/employee web app [React.js Tailwind.css SyncFusion]',            
         demo:'./images/dashboard.png'
     }, 
     {
@@ -122,6 +122,7 @@ async function command(cmd) {
             resume();
             break;
         case 'help':
+            instructions(4);
             help();
             break;
         case 'clear':
@@ -130,14 +131,19 @@ async function command(cmd) {
     }
 }
 
+window.onload = function() {
+    cmd.focus();
+};
+
 cmd.addEventListener("keydown", function (e) {
     // checks whether the pressed key is "Enter"
     if (e.key === 'Enter') {
-        if(cmd.value === helpList[0].name || cmd.value === helpList[1].name || cmd.value === helpList[2].name || cmd.value === helpList[3].name || cmd.value === helpList[4].name || cmd.value === helpList[5].name || cmd.value === helpList[6].name || cmd.value === helpList[7].name || cmd.value === helpList[8].name) {
-            // leaves the cmd command in chat history
+        const cmdlow = cmd.value.toLowerCase();
+        if(cmdlow === helpList[0].name || cmdlow === helpList[1].name || cmdlow === helpList[2].name || cmdlow === helpList[3].name || cmdlow === helpList[4].name || cmdlow === helpList[5].name || cmdlow === helpList[6].name || cmdlow === helpList[7].name || cmdlow === helpList[8].name) {
+            // leaves the cmd command in chat h
             const cmdHistory = document.createElement('div');
             cmdHistory.setAttribute('id', 'cmdHistory');
-            cmdHistory.innerText=`guest@alexander ~$ ${cmd.value}`;
+            cmdHistory.innerText=`guest@chewbotcaa ~$ ${cmd.value}`;
             lines.appendChild(cmdHistory);
 
             command(cmd.value);
@@ -158,7 +164,7 @@ const whoisalex = async () => {
     newLine.setAttribute('id', 'whoisalexmsg');
     newLine.classList.add('secondary-color');
 
-    newLine.innerText = "This message was brought to you by Alexander:\n\n Hello guestName!\nI'm a software developer who likes creating engaging websites with aesthetically pleasing user interfaces such as this Star Wars themed command line portfolio.\n\n After graduating with a Bachelor's in software engineering (3.39 GPA) at Mississippi State, I was hoping to develop my skills in a professional environment and decided to accept an IT internship at a company called Hunington Ingalls; however, I ended up on the IT business team where I mostly focused on the relationship between corporate businesses and software development teams. I also participated in the anaylsis of IT projects to organize a company priority list and honed my interpersonal communication skills by surveying individuals and presenting information gathered to my team.\n\n After my internship ended, I knew that the line of work I was doing was not what I liked.\n I would have rather been growing my career as a software developer and been working on professional code like I envisioned. So currently, to prepare myself for upcoming interviews, I decided to create a few projects that would show recruiters what I am capable of building, while at the same time, proving how I will put in the extra mile to achieve my goals.\n\n With that being said, I hope you got a good idea of my personality, technological skills, and work ethic from this message. Hope you enjoy your time with Chewbotcaa!\n\np.s. If you try the 'whatami' command, turn down your volume a bit.\n  - Alexander Bui \n";
+    newLine.innerText = "This message was brought to you by Alexander:\n\n Hello guestName!\nI'm a software developer who likes creating engaging websites with aesthetically pleasing user interfaces such as this Star Wars themed command line portfolio.\n\n After graduating with a Bachelor's in software engineering (3.39 GPA) at Mississippi State, I was hoping to develop my skills in a professional environment and decided to accept an IT internship at Hunington Ingalls. During this internship, I was assigned to develop a dashboard metrics employee web app with flexible requirements. Once I got the requirements, I just started the whole software development life cycle. I also did other business related tasks such as keeping track of annual budgets and surveying employees to see if they still used certain software to cut down on wasted costs. After my internship ended, I knew that I definitely enjoyed working on my code project more than any other task I was given.\n\n So now I am looking to continue my path as a professional software engineer. So currently, to prepare myself for upcoming interviews, I decided to create a few projects that would show recruiters what I am capable of building, while at the same time, proving how I will put in that extra work to achieve my goals.\n\n With that being said, I hope you got a good idea of my personality, technological skills, and work ethic from this message. Hope you enjoy your time with Chewbotcaa!\n\np.s. If you try the 'whatami' command, turn down your volume a bit.\n  - Alexander Bui \n";
     lines.appendChild(newLine);   
 }
 
@@ -168,7 +174,7 @@ const whatami = async () => {
     newLine.setAttribute("id", "whoamimsg");
     newLine.classList.add('secondary-color');
 
-    newLine.innerText = "RAWRGWAWGGR! Chewbotca!";
+    newLine.innerText = "RAWRGWAWGGR! Chewbotcaa!";
     lines.appendChild(newLine);
     
     // audio byte that plays a chewbacca roar
@@ -198,8 +204,15 @@ const instructions = async (para) => {
         else if (para === 3) {
             const instructions = document.createElement('div');
             instructions.setAttribute('id', 'instructions');
-            instructions.innerText='Getting resume ...';
+            instructions.innerText='Loading Alexander`s resume ...';
         
+            lines.appendChild(instructions);
+        }
+        else if (para === 4) {
+            const instructions = document.createElement('div');
+            instructions.setAttribute('id', 'instructions');
+            instructions.innerText = 'To run a command, enter a blue highlighted entry.'
+
             lines.appendChild(instructions);
         }
     } catch (err) {
@@ -442,7 +455,7 @@ const SyntaxError = async () => {
     // mount messages like a syntaxError due to misinput
     const newLine = document.createElement("div");
     newLine.setAttribute("id", "errmsg");
-    newLine.innerText = `chewbotca: command not found: ${cmd.value}`;
+    newLine.innerText = `chewbotcaa: command not found: ${cmd.value}`;
 
     lines.appendChild(newLine);
     // clears cmdline value so user can start with a fresh input
