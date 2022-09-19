@@ -27,13 +27,13 @@ const projectList = [
     {
         name:'pokedex',
         gitlink:'https://github.com/alexbui831/pokemon-api-fetching',         
-        desc:'Pokedex web app created using the poke api that displays JSON data [React.js Tailwind.css PokeAPI]',    
+        desc:'Pokedex web app created using the poke api that displays JSON data [React Tailwind RESTful API]',    
         demo:'./images/pokemonapi.png'
     }, 
     {
         name:'dashboard', 
         gitlink:'https://github.com/alexbui831/reactjs-syncfusion-dashboard-app',       
-        desc:'Huntington Ingalls internship project where I was tasked to create a front-end for a dashboard metrics/employee web app [React.js Tailwind.css SyncFusion]',            
+        desc:'Huntington Ingalls internship project where I was tasked to create a front-end for a dashboard metrics/employee web app [React Tailwind SyncFusion]',            
         demo:'./images/dashboard.png'
     }, 
     {
@@ -69,7 +69,7 @@ const projectList = [
     {
         name:'portfolio',
         gitlink:'https://github.com/alexbui831/terminal-portfolio',
-        desc:'The online website you are currently viewing. [JS Node.js Express AWS]',
+        desc:'The online website you are currently viewing. [JS Node Express AWS]',
         demo:'./images/portfolio.png'
     },
 ]
