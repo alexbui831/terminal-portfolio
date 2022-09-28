@@ -180,6 +180,9 @@ const whatami = async () => {
     // audio byte that plays a chewbacca roar
     await delay(1000);
     var audio = new Audio("./images/chewbotcasound.mp3");
+
+    // lowers volume
+    audio.volume = .3;
     audio.play();
 }
 
@@ -280,7 +283,7 @@ const projects = async () => {
                     border: "0.1em",
                     x: "center",                        // positions box
                     y: "center",                        // positions box
-                    html: `<img src=${projectList[i].demo} width='1000' height='600'>`,
+                    html: `<img src=${projectList[i].demo} width='1000' height='550'>`,
                 });
             })
         }
@@ -398,7 +401,7 @@ const resume = async () => {
     // resume
     await delay(500);
 
-    window.open('images/ALEXANDER_BUI_RESUME.pdf', '_blank').focus();
+    window.open('images/alexanderbui-resume-v2.pdf', '_blank').focus();
 }
 
 const help = async () => { 
