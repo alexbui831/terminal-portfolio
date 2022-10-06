@@ -5,10 +5,10 @@ const intromsg = document.getElementById("intromsg")
 
 // create dictionary that will be used to mount commands when user types help
 const helpList = [
-    {name:"whoisalex",      desc:"Who is Alexander Bui"},                               //done
-    {name:"whatami",        desc:"What is Chewbotcaa"},                                //done
     {name:"projects",       desc:"View programming projects"},                                      //done       
-    {name:"skills",         desc:"View knowledge of programming languages and other skills"},        //done                       
+    {name:"skills",         desc:"View knowledge of programming languages and other skills"},        //done     
+    {name:"whoisalex",      desc:"Who is Alexander Bui"},                               //done
+    {name:"whatami",        desc:"What is Chewbotcaa"},                                //done                  
     {name:"socials",        desc:"List professional social media links"},               //done
     {name:"email",          desc:"Obtain Alexander's email"},                           //done
     {name:"resume",         desc:"Open Alexander's resume"},
